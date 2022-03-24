@@ -28,7 +28,19 @@ header nav .navtitles {
     align-items: center;
 }
 
-header nav .navtitles {
+header nav .navtitles p {
     margin: 0 15px 0 0;
     color: whitesmoke;
 }
+
+header nav .navtitles p {
+    cursor: pointer;
+    color: rgb(180, 243, 6);
+}
+
+header nav .nav-titles button {
+    padding: 5px 15px;
+    font-size: 1.2em;
+    font-family: 'Poppins';
+    background-color: inherit;
+    border: 1px solid rgb(180, 243, 6);
