@@ -64,6 +64,40 @@ header nav .nav-titles button:hover {
     justify-content: space-between;
 }
 
+.banner .banner-info {
+    width: 100%;
+    flex-shrink: 1;
+}
+.banner .banner-info h1 {
+    margin: 0;
+    font-size: 3vw;
+    text-align: center;
+}
+
+.banner .banner-info p {
+    text-align: left;
+    background-color: grey;
+    font-weight: 400;
+    color: whitesmoke;
+}
+
+.hero .banner-info .banner-details {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.hero .banner-info .banner-details .banner-detail {
+    margin: 0 15px 15px 0;
+    border-radius: 50%;
+    transition: filter 0.5s;
+}
+
+.hero .banner-info .banner-details .banner-detail:hover {
+    filter: brightness(50%);
+}
+
 footer {
     margin: 0;
     padding: 20px;
