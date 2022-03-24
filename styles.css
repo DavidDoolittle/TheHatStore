@@ -49,3 +49,41 @@ header nav .nav-titles button {
     cursor: pointer;
     transition: color 0.5s, background-color 0.5s;
 }
+
+header nav .nav-titles button:hover {
+    color: inherit;
+    background-color: green;
+    border: 1px solid
+}
+
+.banner {
+    padding: 30px 5%;
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer {
+    margin: 0;
+    padding: 20px;
+    padding-top: 1em;
+    background-color: black;
+}
+
+footer {
+        margin: 0 15px 0 0;
+        color: whitesmoke;
+}
+
+footer .footer-columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+footer .footer-note {
+    text-align: center;
+    font-size: x-small;
+    margin-top: 0;
+}
