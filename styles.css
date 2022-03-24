@@ -44,3 +44,8 @@ header nav .nav-titles button {
     font-family: 'Poppins';
     background-color: inherit;
     border: 1px solid rgb(180, 243, 6);
+    border-radius: 5px;
+    color: rgb(180, 243, 6);
+    cursor: pointer;
+    transition: color 0.5s, background-color 0.5s;
+}
