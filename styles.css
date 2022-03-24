@@ -1,7 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,500&display=swap');
 
 body {
+    background-color: cadetblue;
+}
+
+body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
     color: black;
+}
+
+header nav {
+    padding: 2px 3% 0px 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav h1 {
+    margin: 0;
+    text-transform: uppercase;
+    color: whitesmoke;
+}
+
+header nav .navtitles {
+    display: flex;
+    align-items: center;
+}
+
+header nav .navtitles {
+    margin: 0 15px 0 0;
+    color: whitesmoke;
 }
