@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" text="text/css" />
+    <title>Big Dave's Hat Store</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Big Dave's Hat Store</h1>
+            <div class="nav-titles">
+                <p>Home</p>
+                <p>Hats</p>
+                <p>Contact</p>
+                <button>Shop</button>
+            </div>
+        </nav>
+    </header>
+
+        <article>
+            <h1>Order</h1>
+            <div class="columns">
+            <div class="title"></div>
+            <div class="price"></div>
+            </div>
+                <p class="desc"></p>
+            </div>
+       
+            <form action="http://localhost:7071/api/post" method="post">
+                <input type="hidden" id="contact" name="contact">
+                <input type="hidden" id="location" name="location">
+       
+                <div class="input-group">
+                 <div><label for="first-name">First Name</label></div>
+                 <div><input type="text" name="first-name" id="first-name" /></div>
+                </div>
+         
+                <div class="input-group">
+                 <div><label for="last-name">Last Name</label></div>
+                 <div><input type="text" name="last-name" id="last-name" /></div>
+                </div>
+         
+                <div class="input-group">
+                 <div><label for="address">Address</label></div>
+                 <div><input type="text" name="address" id="address" /></div>
+                </div>
+       
+                <div class="input-group">
+                    <div><label for="state">State</label></div>
+                    <div>
+                        <select name="state" id="state">
+                            <option value="" selected>[Select one]</option>
+                            <option value="Arizona">Arizona</option>
+                            <option value="California">California</option>
+                            <option value="Florida">Florida</option>
+                            <option value="Kentucky">Kentucky</option>
+                        </select>
+                   </div>
+                </div>
+       
+                <div class="input-group">
+                    <div><label for="postal-code">Postal Code</label></div>
+                    <div><input type="text" name="postal-code" id="postal-code" /></div>
+                </div>
+       
+                <div class="input-group">
+                    <div><label for="comments">Comments</label></div>
+                    <div>
+                        <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+       
+                <input type="reset" value="Reset" />
+                <input type="submit" value="Submit" />
+          
+            </form>
+       </article>
+
+    <footer>
+        <div class="footer-columns">
+            <div class="footer-column">
+                <h3>Contact</h3>
+                <p>info@bigDave.com</p>
+                <p>1(502)123-4567</p>
+            </div>
+            <div class="footer-column">
+                <h3>Store Location</h3>
+                <p>1234 Fake St</p>
+                <p>Louisville, KY</p>
+                <p>40213</p>
+            </div>
+            <div class="footer-column">
+            <h3>Hours</h3>
+            <p>Mon-Fri</p>
+            <p>9am-9pm</p>
+            </div>
+        </div>
+            <div class="footer-note">
+            <p>page created by DavidDoolittle</p>
+            </div>
+    </footer>
+</body>
+</html>
