@@ -56,24 +56,6 @@ header nav .nav-titles button:hover {
     border: 1px solid
 }
 
-.banner {
-    padding: 30px 5%;
-    margin-top: 5%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.banner .banner-info {
-    width: 100%;
-    flex-shrink: 1;
-}
-.banner .banner-info h1 {
-    margin: 0;
-    font-size: 3vw;
-    text-align: center;
-}
-
 .banner .banner-info p {
     text-align: left;
     background-color: grey;
@@ -96,6 +78,60 @@ header nav .nav-titles button:hover {
 
 .hero .banner-info .banner-details .banner-detail:hover {
     filter: brightness(50%);
+}
+
+/* Hats */
+
+.hats {
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+    background-color: #fff;
+    border: solid 1px black;
+}
+
+.hats img {
+    width: 80%;
+    
+}
+
+.hats .title {
+    font-weight: bold;
+}
+
+.hats .columns {
+    width: 100%;
+}
+
+.hats .price {
+    text-align: right;
+}
+
+.hats .columns div {
+    width: 100%;
+}
+
+h1 {
+    font-size: 3em;
+    margin-top: 0.5em;
+    text-align: left;
+}
+
+h2 {
+    font-size: 2em;
+    margin-top: 0.5em;
+    text-align: center;
+}
+
+.banner {
+    max-width: 100%;
+}
+
+.sub-title {
+    background-color: #fff;
+    font-size: 1.2em;
+    padding: 10px;
+    text-align: left;
 }
 
 footer {
