@@ -8,10 +8,6 @@ body {background-color: cadetblue;}
     color: white;
 }
 
-header {
-    background: linear-gradient(var(--color-light-pink), var(--color-pink), var(--color-purple));
-}
-
 header nav {
     padding: 30px 5% 0px 5%;
     display: flex;
@@ -36,7 +32,7 @@ header nav .nav-titles p {
 }
 
 header nav .nav-titles p:hover {
-    color: var(--color-purple);
+    color: whitesmoke;
     cursor: pointer;
 }
 
@@ -45,7 +41,7 @@ header nav .nav-titles button {
     font-size: 1.2em;
     font-family: 'Poppins';
     background-color: inherit;
-    border: 1px solid whitesmoke;
+    border: 1px solid rgb(28, 201, 28);
     border-radius: 5px;
     color: whitesmoke;
     cursor: pointer;
@@ -54,8 +50,8 @@ header nav .nav-titles button {
 
 header nav .nav-titles button:hover {
     color: inherit;
-    background-color: var(--color-purple);
-    border: 1px solid var(--color-purple);
+    background-color: green);
+    border: 1px solid green;
 
 }
 
@@ -102,27 +98,14 @@ header nav .nav-titles button:hover {
 .banner .banner-image img:hover {
     transform: scale(1.2);
     opacity: 0.5;
-}
-
-.banner .banner-image .banner-background {
-    background: var(--color-purple); 
-    border-radius: 50%;
-    padding: 100% 100% 0 0;
-    z-index: -1;
-    margin-top: -50%;
-
+    transition: color 0.5s, background-color 0.5s;
 }
 
 .main .banner-info button {
     background-color: inherit;
     color: whitesmoke;
-    border: 1px solid whitesmoke;
-    transition: background-color 0.5s, color 0.5s;
-}
-
-.main .banner-info button:hover {
-    background-color: var(--color-purple);
-    border: 1px solid var(--color-purple);
+    border: 1px solid rgb(28, 201, 28);
+    transition: color 0.5s, background-color 0.5s;
 }
 
 .main .banner-info .banner-details {
