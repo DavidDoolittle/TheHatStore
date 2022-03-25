@@ -1,17 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,500&display=swap');
 
-body {
-    background-color: cadetblue;
-}
+body {background-color: cadetblue;}
 
-body {
+*, body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    color: black;
+    color: white;
+}
+
+header {
+    background: linear-gradient(var(--color-light-pink), var(--color-pink), var(--color-purple));
 }
 
 header nav {
-    padding: 2px 3% 0px 3%;
+    padding: 30px 5% 0px 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -23,19 +25,19 @@ header nav h1 {
     color: whitesmoke;
 }
 
-header nav .navtitles {
+header nav .nav-titles {
     display: flex;
     align-items: center;
 }
 
-header nav .navtitles p {
+header nav .nav-titles p {
     margin: 0 15px 0 0;
     color: whitesmoke;
 }
 
-header nav .navtitles p {
+header nav .nav-titles p:hover {
+    color: var(--color-purple);
     cursor: pointer;
-    color: rgb(180, 243, 6);
 }
 
 header nav .nav-titles button {
@@ -43,95 +45,107 @@ header nav .nav-titles button {
     font-size: 1.2em;
     font-family: 'Poppins';
     background-color: inherit;
-    border: 1px solid rgb(180, 243, 6);
+    border: 1px solid whitesmoke;
     border-radius: 5px;
-    color: rgb(180, 243, 6);
+    color: whitesmoke;
     cursor: pointer;
     transition: color 0.5s, background-color 0.5s;
 }
 
 header nav .nav-titles button:hover {
     color: inherit;
-    background-color: green;
-    border: 1px solid
+    background-color: var(--color-purple);
+    border: 1px solid var(--color-purple);
+
+}
+
+.banner {
+    padding: 30px 5%;
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.banner .banner-info {
+    width: 100%;
+    flex-shrink: 1;
+}
+.banner .banner-info h1 {
+    margin: 0;
+    font-size: 4vw;
+    width: 80%;
 }
 
 .banner .banner-info p {
-    text-align: left;
-    background-color: grey;
     font-weight: 400;
     color: whitesmoke;
 }
 
-.hero .banner-info .banner-details {
+.banner .banner-info button {
+    margin-top: 20px;
+    padding: 15px 20px;
+    font-size: 1.2em;
+    border-radius: 10px;
+    border:none;
+    outline: none;
+    cursor: pointer;
+}
+
+.banner .banner-image img {
+    width: 80%;
+    margin: 5%;
+    border-radius: 50%;
+    transition: 250ms ease-in-out,
+    opacity 250ms linear;
+}
+.banner .banner-image img:hover {
+    transform: scale(1.2);
+    opacity: 0.5;
+}
+
+.banner .banner-image .banner-background {
+    background: var(--color-purple); 
+    border-radius: 50%;
+    padding: 100% 100% 0 0;
+    z-index: -1;
+    margin-top: -50%;
+
+}
+
+.main .banner-info button {
+    background-color: inherit;
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.main .banner-info button:hover {
+    background-color: var(--color-purple);
+    border: 1px solid var(--color-purple);
+}
+
+.main .banner-info .banner-details {
     margin-top: 30px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
 }
 
-.hero .banner-info .banner-details .banner-detail {
+.main .banner-info .banner-details .banner-detail {
     margin: 0 15px 15px 0;
     border-radius: 50%;
     transition: filter 0.5s;
 }
 
-.hero .banner-info .banner-details .banner-detail:hover {
+.main .banner-info .banner-details .banner-detail:hover {
     filter: brightness(50%);
 }
 
-/* Hats */
-
-.hats {
-    width: 200px;
-    padding: 10px;
-    margin: 10px;
-    background-color: #fff;
-    border: solid 1px black;
-}
-
-.hats img {
-    width: 80%;
-    
-}
-
-.hats .title {
-    font-weight: bold;
-}
-
-.hats .columns {
-    width: 100%;
-}
-
-.hats .price {
-    text-align: right;
-}
-
-.hats .columns div {
-    width: 100%;
-}
-
-h1 {
-    font-size: 3em;
-    margin-top: 0.5em;
-    text-align: left;
-}
-
-h2 {
-    font-size: 2em;
-    margin-top: 0.5em;
-    text-align: center;
-}
-
-.banner {
-    max-width: 100%;
-}
-
-.sub-title {
-    background-color: #fff;
-    font-size: 1.2em;
-    padding: 10px;
-    text-align: left;
+.main .banner-info .banner-details .banner-detail img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
 }
 
 footer {
