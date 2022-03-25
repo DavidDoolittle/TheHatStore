@@ -19,38 +19,32 @@
             </div>
         </nav>
     </header>
-
-        <article>
-            <h1>Order</h1>
-            <div class="columns">
-            <div class="title"></div>
-            <div class="price"></div>
-            </div>
-                <p class="desc"></p>
-            </div>
+        <main>
+            <article>
+                <h1>Contact</h1>
+                <p>Please Feel Free To Reach Out!</p>
+                <form action="http://localhost:7071/api/post" method="post">
+                    <input type="hidden" id="contact" name="contact">
+                    <input type="hidden" id="location" name="location">
        
-            <form action="http://localhost:7071/api/post" method="post">
-                <input type="hidden" id="contact" name="contact">
-                <input type="hidden" id="location" name="location">
-       
-                <div class="input-group">
-                 <div><label for="first-name">First Name</label></div>
-                 <div><input type="text" name="first-name" id="first-name" /></div>
-                </div>
+                    <div class="input-group">
+                     <div><label for="first-name">First Name</label></div>
+                     <div><input type="text" name="first-name" id="first-name" /></div>
+                    </div>
          
-                <div class="input-group">
-                 <div><label for="last-name">Last Name</label></div>
-                 <div><input type="text" name="last-name" id="last-name" /></div>
-                </div>
+                    <div class="input-group">
+                     <div><label for="last-name">Last Name</label></div>
+                     <div><input type="text" name="last-name" id="last-name" /></div>
+                    </div>
          
-                <div class="input-group">
-                 <div><label for="address">Address</label></div>
-                 <div><input type="text" name="address" id="address" /></div>
-                </div>
+                    <div class="input-group">
+                     <div><label for="address">Address</label></div>
+                     <div><input type="text" name="address" id="address" /></div>
+                    </div>
        
-                <div class="input-group">
-                    <div><label for="state">State</label></div>
-                    <div>
+                    <div class="input-group">
+                     <div><label for="state">State</label></div>
+                     <div>
                         <select name="state" id="state">
                             <option value="" selected>[Select one]</option>
                             <option value="Arizona">Arizona</option>
@@ -58,27 +52,27 @@
                             <option value="Florida">Florida</option>
                             <option value="Kentucky">Kentucky</option>
                         </select>
-                   </div>
-                </div>
-       
-                <div class="input-group">
-                    <div><label for="postal-code">Postal Code</label></div>
-                    <div><input type="text" name="postal-code" id="postal-code" /></div>
-                </div>
-       
-                <div class="input-group">
-                    <div><label for="comments">Comments</label></div>
-                    <div>
-                        <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+                     </div>
                     </div>
-                </div>
        
-                <input type="reset" value="Reset" />
-                <input type="submit" value="Submit" />
-          
-            </form>
-       </article>
+                    <div class="input-group">
+                     <div><label for="postal-code">Postal Code</label></div>
+                     <div><input type="text" name="postal-code" id="postal-code" /></div>
+                    </div>
+       
+                    <div class="input-group">
+                     <div><label for="comments">Comments</label></div>
+                     <div>
+                      <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+                     </div>
+                    </div>
+       
+                    <input type="reset" value="Reset" />
+                    <input type="submit" value="Submit" />
 
+                </form>
+            </article>
+        </main>
     <footer>
         <div class="footer-columns">
             <div class="footer-column">
