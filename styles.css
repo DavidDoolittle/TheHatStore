@@ -1,15 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,500&display=swap');
 
-@media screen and (min-width: 900px) {
-    article {
-      padding: 1rem 3rem;
+@media screen and (min-width: 300px) {
+    header nav {
+        text-align: center;
     }
   }
 
 body {background-color: cadetblue;}
 
 *, body {
-    margin: 5;
     font-family: 'Poppins', sans-serif;
     color: white;
 }
@@ -97,13 +96,6 @@ header nav .nav-titles button:hover {
     color: black;
   }
 
-.banner .banner-details img {
-    width: 80%;
-    margin: 5%;
-    border-radius: 50%;
-    transition: 250ms ease-in-out,
-}
-
 .main .banner-info button {
     background-color: inherit;
     color: whitesmoke;
@@ -123,13 +115,18 @@ header nav .nav-titles button:hover {
 }
 
 .main .banner-info .banner-details .banner-detail:hover {
-    filter: brightness(80%);
+    filter: brightness(50%);
+    cursor: pointer;
 }
 
 .main .banner-info .banner-details .banner-detail img {
     width: 125px;
     height: 125px;
     border-radius: 50%;
+}
+
+.main .banner-info .banner-details .banner-detail h5 {
+    text-align: center;
 }
 
 /*Footer*/
@@ -139,11 +136,7 @@ footer {
     padding: 15px;
     padding-top: 2em;
     background-color: black;
-}
-
-footer {
     text-align: center;
-    color: whitesmoke;
 }
 
 footer .footer-columns {
@@ -157,7 +150,7 @@ footer .footer-columns h3 {
 }
 
 footer .footer-note {
-    text-align: left;
+    text-align: right;
     font-size: x-small;
 }
 
@@ -168,12 +161,9 @@ article {
     width: 75%;
 }
 
-article .input-header h1{
-    font-size: 25px;
-}
-
-article .input-header p {
-    font-size: x-small;
+main h2 {
+    font-size: large;
+    text-align: center;
 }
 
 .input-group {
