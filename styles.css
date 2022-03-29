@@ -206,6 +206,11 @@ cursor: pointer;
 
 /* Shop */
 
+header h2 {
+    font-size: xx-large;
+    text-align: center;
+}
+
 section .Hats img{ 
     width: 20%;
     margin: 5%;
