@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,500&display=swap');
 
-@media all and (min-width:321px) and (max-width: 480px) {
-    /* footer */
-  }
-
 body {background-color: cadetblue;}
 
 *, body {
