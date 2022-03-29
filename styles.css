@@ -56,6 +56,11 @@ header nav .nav-titles button {
     cursor: pointer;
 }
 
+header nav .nav-titles button:hover {
+        background-color: rgb(29, 165, 52);
+        color: black;
+      }
+
 .banner .banner-info {
     width: 100%;
     flex-shrink: 1;
@@ -86,6 +91,11 @@ header nav .nav-titles button {
     color: whitesmoke;
     cursor: pointer;
 }
+
+.banner .banner-info button:hover {
+    background-color: rgb(29, 165, 52);
+    color: black;
+  }
 
 .banner .banner-details img {
     width: 80%;
