@@ -88,7 +88,7 @@ header nav .nav-titles button:hover {
 .banner .banner-info button:hover {
     background-color: rgb(29, 165, 52);
     color: black;
-  }
+}
 
 .main .banner-info button {
     background-color: inherit;
