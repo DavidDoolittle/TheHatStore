@@ -123,6 +123,86 @@ header nav .nav-titles button:hover {
     text-align: center;
 }
 
+.mainContent{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 70%;
+}
+
+.hats-row {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: rgb(107, 95, 95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
+    padding-right: .1rem;
+}
+
+.hats-row h5 {
+    margin: 0;
+    font-size: larger;
+    padding-left: 3em;
+}
+
+.hats-row p {
+    margin: 0;
+    font-size: medium;
+    padding-left: 3.6em;
+}
+
+.hats-row > div{
+    flex-grow: 2;
+    padding-left: .5rem;
+}
+
+.hats-row > small{
+    flex-shrink: 3;
+    font-size: larger;
+}
+
+.hats-row > button {
+    flex-shrink: 1;
+    margin: 3em;
+}
+
+.hats-row > button {
+    padding: 5px 10px;
+    font-size: 1.3em;
+    font-family: 'Poppins';
+    background-color: inherit;
+    border: 3px solid rgb(28, 201, 28);
+    border-radius: 5px;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.hats-row img {
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    padding: 20px;
+}
+
+.hats-row button:hover {
+    background-color: rgb(29, 165, 52);
+    color: black;
+}
+
+.hats-row button {
+    background-color: inherit;
+    color: whitesmoke;
+    border: 3px solid rgb(28, 201, 28);
+}
+
 /*Footer*/
 
 footer {
@@ -200,75 +280,60 @@ cursor: pointer;
 
 /* Shop */
 
-.main {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 70%;
+header h2 {
+    font-size: xx-large;
+    text-align: center;
 }
 
-.hats-row {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 15px;
-    flex-wrap: wrap;
-    align-items: center;
-    background-color: rgb(107, 95, 95);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
-    padding-right: .1rem;
-}
-
-.hats-row h5 {
-    margin: 0;
-    font-size: larger;
-    padding-left: 3em;
-}
-
-.hats-row p {
-    margin: 0;
-    font-size: medium;
-    padding-left: 3.6em;
-}
-
-.hats-row > div{
-    flex-grow: 2;
-    padding-left: .5rem;
-}
-
-.hats-row > small{
-    flex-shrink: 3;
-    font-size: larger;
-}
-
-.hats-row > button {
-    flex-shrink: 1;
-    margin: 3em;
-}
-
-.hats-row > button {
-    padding: 5px 10px;
-    font-size: 1.3em;
-    font-family: 'Poppins';
-    background-color: inherit;
-    border: 3px solid rgb(28, 201, 28);
-    border-radius: 5px;
-    color: whitesmoke;
-    cursor: pointer;
-}
-
-.hats-row button:hover {
-    background-color: rgb(29, 165, 52);
-    color: black;
-}
-
-.hats-row button {
-    background-color: inherit;
-    color: whitesmoke;
-    border: 3px solid rgb(28, 201, 28);
-}
-
-.hats-row img {
-    width: 125px;
-    height: 125px;
+section .Hats img{ 
+    width: 20%;
+    margin: 5%;
     border-radius: 50%;
-    padding: 20px;
+}
+
+section .Hats .columns {
+    margin: 0;
+    padding: 15px;
+    padding-top: 0.5em;
+    background-color: rgb(71, 71, 141);
+    text-align: left;
+    font-size: medium;
+}
+
+section .Hats .title {
+    color: whitesmoke;
+    font-weight: 600;
+    padding: 25px;
+}
+
+section .Hats .price {
+    color: whitesmoke;
+    text-align: end;
+}
+
+section .Hats p {
+    margin: 0;
+    padding: 25px;
+    padding-top: 0.5em;
+    background-color:rgb(27, 27, 58);
+    text-align: left;
+    font-size: medium;
+}
+
+section .Hats button {   
+        padding: 5px 10px;
+        font-size: 1.3em;
+        font-family: 'Poppins';
+        background-color: inherit;
+        border: 5px solid rgb(28, 201, 28);
+        border-radius: 5px;
+        color: whitesmoke;
+        cursor: pointer;
+        transition: color 0.5s;
+        text-decoration: underline;
+}
+
+section .Hats .title {
+    font-size: 50px;
+    text-align: left;
 }
