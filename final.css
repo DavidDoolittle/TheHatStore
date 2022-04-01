@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,500&display=swap');
+
+body {background-color: cadetblue;}
+
+*, body {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+body .banner .banner-info p {
+    display: flex;
+    flex-direction: right;
+    margin-bottom: 10;
+    background-color: rgb(29, 29, 51);
+    justify-content: center;
+}
+
+header nav {
+    padding: 10px 1% 30px 1%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav h1 {
+    text-transform: uppercase;
+    color: whitesmoke;
+}
+
+header nav .nav-titles {
+    display: flex;
+    align-items: center;
+}
+
+header nav .nav-titles p {
+    margin: 0 25px 0 0;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+header nav .nav-titles button {
+    padding: 5px 10px;
+    font-size: 1.3em;
+    font-family: 'Poppins';
+    background-color: inherit;
+    border: 3px solid rgb(28, 201, 28);
+    border-radius: 5px;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+header nav .nav-titles button:hover {
+        background-color: rgb(29, 165, 52);
+        color: black;
+      }
+
+.banner .banner-info {
+    display: contents;
+    width: 100%;
+    flex-shrink: 1;
+}
+
+.banner .banner-info h1 {
+    margin: auto;
+    font-size: 4em;
+    width: auto;
+    padding: 10px 1% 30px 1%;
+}
+
+.banner .banner-info h2 {
+    margin: auto;
+    font-size: 3em;
+    width: auto;
+    padding: 10px 1% 30px 1%;
+}
+
+.banner .banner-info h3 {
+    display: flex;
+    align-content: flex-start;
+    margin: auto;
+    font-size: 2em;
+    width: auto;
+    padding: 10px 1% 30px 1%;
+}
+
+.banner .banner-info p {
+    margin: auto;
+    font-size: auto;
+    width: auto;
+    padding: 10px 1% 10px 1%;
+    color: whitesmoke;
+}
+
+.banner .banner-info button {
+    padding: 5px 10px;
+    font-size: 1.3em;
+    font-family: 'Poppins';
+    background-color: inherit;
+    border: 3px solid rgb(28, 201, 28);
+    border-radius: 5px;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.banner .banner-info button:hover {
+    background-color: rgb(29, 165, 52);
+    color: black;
+}
+
+.main .banner-info button {
+    background-color: inherit;
+    color: whitesmoke;
+    border: 3px solid rgb(28, 201, 28);
+}
+
+.main .banner-info .banner-img {
+    margin: auto;
+    font-size: 1.1em;
+    padding: 10px 1% 10px 1%;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.main .banner-info .banner-img .banner-detail {
+    margin: 0 20px 20px 0;
+    border-radius: 50%;
+}
+
+.main .banner-info .banner-img .banner-detail:hover {
+    filter: brightness(50%);
+    cursor: pointer;
+}
+
+.main .banner-info .banner-img .banner-detail img {
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+}
+
+.main .banner-info .banner-img .banner-detail h5 {
+    text-align: center;
+}
+
+/*Footer*/
+
+footer {
+    margin: 0;
+    padding: 15px;
+    padding-top: 2em;
+    background-color: black;
+    text-align: center;
+}
+
+footer .footer-columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+footer .footer-columns h3 {
+    font-size: large;
+}
+
+footer .footer-note {
+    text-align: right;
+    font-size: x-small;
+}
+
+/* Contact */
+
+article {
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+}
+
+main h2 {
+    font-size: large;
+    text-align: center;
+}
+
+.input-group {
+margin-bottom: 20px;
+}
+
+.input-group input,
+.input-group textarea,
+.input-group select {
+padding: 10px;
+border: solid 1px black;
+border-radius: 2px;
+width: 200%;
+color: black;
+}
+
+label {
+font-weight: 600;
+color: whitesmoke;
+}
+
+input[type="reset"] {
+border: solid 1px rgb(28, 201, 28);
+background-color: inherit;
+border-radius: 10px;
+padding: 10px;
+text-decoration: underline;
+cursor: pointer;
+}
+
+input[type="submit"] {
+border: solid 1px rgb(28, 201, 28);
+background-color: inherit;
+border-radius: 10px;
+padding: 10px;
+text-decoration: underline;
+margin: 4em;
+cursor: pointer;
+}
+
+/* Shop */
+
+.main {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 70%;
+}
+
+.hats-row {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: rgb(107, 95, 95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
+    padding-right: .1rem;
+}
+
+.hats-row h5 {
+    margin: 0;
+    font-size: larger;
+    padding-left: 3em;
+}
+
+.hats-row p {
+    margin: 0;
+    font-size: medium;
+    padding-left: 3.6em;
+}
+
+.hats-row > div{
+    flex-grow: 2;
+    padding-left: .5rem;
+}
+
+.hats-row > small{
+    flex-shrink: 3;
+    font-size: larger;
+}
+
+.hats-row > button {
+    flex-shrink: 1;
+    margin: 3em;
+}
+
+.hats-row > button {
+    padding: 5px 10px;
+    font-size: 1.3em;
+    font-family: 'Poppins';
+    background-color: inherit;
+    border: 3px solid rgb(28, 201, 28);
+    border-radius: 5px;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.hats-row button:hover {
+    background-color: rgb(29, 165, 52);
+    color: black;
+}
+
+.hats-row button {
+    background-color: inherit;
+    color: whitesmoke;
+    border: 3px solid rgb(28, 201, 28);
+}
+
+.hats-row img {
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    padding: 20px;
+}

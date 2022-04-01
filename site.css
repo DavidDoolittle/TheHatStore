@@ -2,9 +2,13 @@
 
 body {background-color: cadetblue;}
 
-*, body {
+body {
     font-family: 'Poppins', sans-serif;
     color: white;
+}
+
+#mainheader {
+    background-color: grey;
 }
 
 body .banner .banner-info p {
@@ -15,41 +19,56 @@ body .banner .banner-info p {
     justify-content: center;
 }
 
-header nav {
-    padding: 10px 1% 30px 1%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+nav {
+    height: 60px;
+    width: 80%;
+    margin: 0 auto 20px;
 }
 
-header nav h1 {
+nav h1 {
     text-transform: uppercase;
     color: whitesmoke;
 }
 
-header nav .nav-titles {
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
     display: flex;
-    align-items: center;
-}
-
-header nav .nav-titles p {
-    margin: 0 25px 0 0;
+    justify-content: row end;
     color: whitesmoke;
     cursor: pointer;
 }
 
-header nav .nav-titles button {
+nav ul li:nth-child(1) {
+    flex-grow: 2;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav img {
+}
+
+nav button {
     padding: 5px 10px;
     font-size: 1.3em;
     font-family: 'Poppins';
     background-color: inherit;
     border: 3px solid rgb(28, 201, 28);
-    border-radius: 5px;
+    border-radius: 10px;
     color: whitesmoke;
     cursor: pointer;
 }
 
-header nav .nav-titles button:hover {
+header nav button:hover {
         background-color: rgb(29, 165, 52);
         color: black;
       }
@@ -336,4 +355,8 @@ section .Hats button {
 section .Hats .title {
     font-size: 50px;
     text-align: left;
+}
+
+script {
+    display: flex;
 }
