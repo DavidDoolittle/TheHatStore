@@ -7,6 +7,14 @@ body {background-color: cadetblue;}
     color: white;
 }
 
+header nav {
+    background-color: grey;
+}
+
+header nav h1 {
+    flex: content;
+}
+
 body .banner .banner-info p {
     display: flex;
     flex-direction: right;
@@ -143,6 +151,11 @@ header nav .nav-titles button:hover {
     text-align: center;
 }
 
+header h2{
+    font-size: xx-large;
+    display: flex;
+}
+
 /*Footer*/
 
 footer {
@@ -170,19 +183,29 @@ footer .footer-note {
 
 /* Contact */
 
-article {
+.main article {
     display: flex;
     flex-wrap: wrap;
     width: 75%;
 }
 
-main h2 {
+.main h2 {
     font-size: large;
+    display: flex;
     text-align: center;
 }
 
-.input-group {
-margin-bottom: 20px;
+.input-group .form {
+    margin: auto;
+    width: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 1;
+    align-items: center;
+    margin: auto;
+    font-size: auto;
+    width: fit-content;
+    padding: 10px 3% 10px 3%;
 }
 
 .input-group input,
@@ -225,12 +248,15 @@ cursor: pointer;
     display: flex;
     flex-direction: column;
     flex-basis: 70%;
+    height: auto;
+    width: fit-content;
 }
 
 .hats-row {
     display: flex;
     flex-direction: row;
     margin-bottom: 15px;
+    margin-left: 0px;
     flex-wrap: wrap;
     align-items: center;
     background-color: rgb(107, 95, 95);
@@ -256,6 +282,7 @@ cursor: pointer;
 }
 
 .hats-row > small{
+    margin: 7px;
     flex-shrink: 3;
     font-size: larger;
 }

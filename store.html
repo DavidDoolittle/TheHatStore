@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="site.css" text="text/css" />
+    <link rel="stylesheet" href="final.css" text="text/css" />
     <title>Store | Big Dave's Hat Store</title>
 </head>
 <body>
@@ -19,48 +19,8 @@
             </div>
         </nav>
             <h2>Products</h2>
-    </header>
-        <section class="shoppinglist">
-            <div>
-                <h1>My shopping list</h1>
+    </header> 
 
-        <div>
-            <label for="item">Enter a new item:</label>
-            <input type="text" name="item" id="item">
-                <button>Add item</button>
-        </div>
-
-        <ul>
-
-        </ul>
-    </section>
-
-        const list = document.querySelector('ul');
-        const input = document.querySelector('input');
-        const button = document.querySelector('button');
-
-button.addEventListener('click', () => {
-  const myItem = input.value;
-        input.value = '';
-
-        const listItem = document.createElement('li');
-        const listText = document.createElement('span');
-        const listBtn = document.createElement('button');
-
-        listItem.appendChild(listText);
-        listText.textContent = myItem;
-        listItem.appendChild(listBtn);
-        listBtn.textContent = 'Delete';
-        list.appendChild(listItem);
-
-  listBtn.addEventListener('click', () => {
-            list.removeChild(listItem);
-  });
-
-        input.focus();
-});
-            </div>
-        </div>
     <main class="main">
 
         <div class="hats-row">
