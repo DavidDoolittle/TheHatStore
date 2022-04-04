@@ -4,34 +4,18 @@ body {background-color: cadetblue;}
 
 *, body {
     font-family: 'Poppins', sans-serif;
-    color: white;
+    color: whitesmoke;
 }
 
 header nav {
-    background-color: grey;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: right;
-}
-
-body .banner .banner-info p {
-    display: flex;
-    flex-direction: right;
-    margin-bottom: 10;
-    background-color: rgb(29, 29, 51);
-    justify-content: center;
-}
-
-header nav {
+    background-color: black;
     padding: 10px 1% 30px 1%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 header nav h1 {
     text-transform: uppercase;
-    color: whitesmoke;
 }
 
 header nav .nav-titles {
@@ -41,118 +25,115 @@ header nav .nav-titles {
 
 header nav .nav-titles p {
     margin: 0 25px 0 0;
-    color: whitesmoke;
     cursor: pointer;
 }
 
 header nav .nav-titles button {
     padding: 5px 10px;
     font-size: 1.3em;
-    font-family: 'Poppins';
     background-color: inherit;
     border: 3px solid rgb(28, 201, 28);
     border-radius: 5px;
-    color: whitesmoke;
     cursor: pointer;
 }
 
 header nav .nav-titles button:hover {
         background-color: rgb(29, 165, 52);
-        color: black;
-      }
+}
 
-.banner .banner-info {
+.hero {
     display: contents;
     width: 100%;
     flex-shrink: 1;
 }
 
-.banner .banner-info h1 {
-    margin: auto;
-    font-size: 4em;
-    width: auto;
-    padding: 10px 1% 30px 1%;
-}
-
-.banner .banner-info h2 {
-    margin: auto;
-    font-size: 3em;
-    width: auto;
-    padding: 10px 1% 30px 1%;
-}
-
-.banner .banner-info h3 {
+.banner-content h2 {
     display: flex;
-    align-content: flex-start;
+    justify-content: center;
+    font-size: 3.5em;
+    font-weight: bolder;
     margin: auto;
-    font-size: 2em;
     width: auto;
     padding: 10px 1% 30px 1%;
 }
 
-.banner .banner-info p {
+.banner-content p {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    font-size: 1.2em;
+    width: auto;
+    padding: 10px 1% 10px 1%;
+    background-color: rgb(15, 58, 26);
+}
+
+.container-main {
+    display: contents;
+    width: 100%;
+    flex-shrink: 1;
+}
+
+.main-content h3 {
+    display: flex;
+    justify-content: left;
+    font-size: 2.5em;
+    font-weight: bolder;
+    margin: auto;
+    width: auto;
+    padding: 10px 1% 30px 1%;
+}
+
+.main-content p {
+    display: flex;
+    justify-content: center;
     margin: auto;
     font-size: auto;
     width: auto;
     padding: 10px 1% 10px 1%;
-    color: whitesmoke;
+    background-color: rgb(34, 33, 33);
 }
 
-.banner .banner-info button {
-    padding: 5px 10px;
-    font-size: 1.3em;
-    font-family: 'Poppins';
-    background-color: inherit;
-    border: 3px solid rgb(28, 201, 28);
-    border-radius: 5px;
-    color: whitesmoke;
-    cursor: pointer;
-}
-
-.banner .banner-info button:hover {
-    background-color: rgb(29, 165, 52);
-    color: black;
-}
-
-.main .banner-info button {
-    background-color: inherit;
-    color: whitesmoke;
-    border: 3px solid rgb(28, 201, 28);
-}
-
-.main .banner-info .banner-img {
-    margin: auto;
-    font-size: 1.1em;
-    padding: 10px 1% 10px 1%;
-    width: auto;
+.main-img {
+    padding-top: 4em;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    justify-content: center; 
 }
 
-.main .banner-info .banner-img .banner-detail {
+.main-img .img-detail img {
     margin: 0 20px 20px 0;
-    border-radius: 50%;
-}
-
-.main .banner-info .banner-img .banner-detail:hover {
-    filter: brightness(50%);
-    cursor: pointer;
-}
-
-.main .banner-info .banner-img .banner-detail img {
     width: 125px;
     height: 125px;
     border-radius: 50%;
 }
 
-.main .banner-info .banner-img .banner-detail h5 {
-    text-align: center;
+.img-detail:hover {
+    filter: brightness(50%);
+    cursor: pointer;
 }
 
-header h2{
-    font-size: xx-large;
+.main-img h5 {
+    text-align: center;
+    font-size: .8em;
+}
+
+.bottom-p p {
     display: flex;
+    justify-content: center;
+    margin: auto;
+    font-size: auto;
+    width: auto;
+    padding: 10px 1% 20px 1%;
+    background-color: rgb(34, 33, 33);
+}
+.bottom-p h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 2.5em;
+    font-weight: bolder;
+    margin: auto;
+    width: auto;
+    padding: 10px 1% 30px 1%;
 }
 
 /*Footer*/
@@ -180,68 +161,27 @@ footer .footer-note {
     font-size: x-small;
 }
 
-/* Contact */
+/* Store */
 
-.main h2 {
-    font-size: large;
+.hats-info h2 {
     display: flex;
-    text-align: center;
-}
-
-.input-group { 
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    flex-shrink: ;
-}
-
-.input-group .form {
+    justify-content: center;
+    font-size: 3.5em;
+    font-weight: bolder;
     margin: auto;
-    width: fit-content;
+    width: auto;
+    padding: 10px 1% 30px 1%;
+}
+
+.hats-info p {
     display: flex;
-    flex-wrap: wrap;
-    flex-shrink: 1;
-    align-items: center;
-    font-size: auto;
-    width: fit-content;
-    padding: 10px 3% 10px 3%;
+    justify-content: center;
+    margin: auto;
+    font-size: 1.2em;
+    width: auto;
+    padding: 10px 1% 30px 1%;
+    background-color: rgb(15, 58, 26); 
 }
-
-.input-group input,
-.input-group textarea,
-.input-group select {
-padding: 10px;
-border: solid 1px black;
-border-radius: 2px;
-width: 200%;
-color: black;
-}
-
-label {
-font-weight: 600;
-color: whitesmoke;
-}
-
-input[type="reset"] {
-border: solid 1px rgb(28, 201, 28);
-background-color: inherit;
-border-radius: 10px;
-padding: 10px;
-text-decoration: underline;
-cursor: pointer;
-}
-
-input[type="submit"] {
-border: solid 1px rgb(28, 201, 28);
-background-color: inherit;
-border-radius: 10px;
-padding: 10px;
-text-decoration: underline;
-margin: 4em;
-cursor: pointer;
-}
-
-/* Shop */
 
 .main {
     display: flex;
@@ -318,4 +258,59 @@ cursor: pointer;
     height: 125px;
     border-radius: 50%;
     padding: 20px;
+}
+
+/*Shopping List*/
+
+#shop-wrap, #shop-wrap > * { 
+    box-sizing: border-box; 
+}
+
+#shop-wrap input {
+  padding: 10px;
+  border: 0;
+  color: black;
+}
+
+#shop-wrap input[type=button], #shop-wrap input[type=submit] {
+  cursor: pointer;
+  color: whitesmoke;
+  background: green;
+}
+
+#shop-form, .item-row {
+  display: flex;
+  align-items: center;
+}
+
+#shop-item, .item-name { 
+    flex-grow: 1; 
+}
+
+#shop-wrap {
+    max-width: 500px;
+    padding: 15px;
+    background: inherit;
+}
+
+.item-row { 
+    margin-top: 10px; 
+}
+
+.item-name {
+  padding: 5px;
+  background: white;
+  color: black;
+}
+.item-name.item-got { 
+    background: white; 
+}
+.item-name.item-got:before {
+  content: "\02713";
+  margin-right: 5px;
+  font-weight: bold;
+  color: #00d036;
+}
+.item-del { 
+    background: red !important; 
 }

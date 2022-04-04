@@ -1,25 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="final.css" text="text/css" />
-    <title>Store | Big Dave's Hat Store</title>
+    <link rel="stylesheet" href="site.css" text="text/css">
+    <script src="script.js"></script>
+    <title>The Hat Store</title>
 </head>
+
 <body>
     <header>
         <nav>
             <h1>Big Dave's Hat Store</h1>
             <div class="nav-titles">
                 <p><a href="index.html">Home</a></p>
-                <p><a href="shop.html">Hats</a></p>
+                <p><a href="store.html">Hats</a></p>
                 <p><a href="contact.html">Contact</a></p>
-                <button><a href="shop.html">Shop</a></button>
+                <button><a href="store.html">Shop</a></button>
             </div>
         </nav>
-            <h2>Products</h2>
-    </header> 
+    </header>
+
+    <section class="hero-hats">
+        <div class="hats-info">
+            <h2>Welcome to our Product page</h2>
+            <p>Our Hats are divided into 3 categories:
+                Fitted, Trucker, and Bucket. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                non proident, s
+            </p>
+        </div>
+    </section>
 
     <main class="main">
 
@@ -85,6 +100,20 @@
 
     </main>
 
+    <div id="shop-wrap">
+        <h1>MY SHOPPING LIST</h1>
+
+        <!-- (A) ADD NEW ITEM -->
+        <form id="shop-form">
+            <input type="text" id="shop-item" placeholder="enter text here" required disabled />
+            <input type="submit" id="shop-add" value="Add" disabled />
+        </form>
+
+        <!-- (B) SHOPPING LIST -->
+        <div id="shop-list"></div>
+    </div>
+
+
     <footer>
         <div class="footer-columns">
             <div class="footer-column">
@@ -99,14 +128,15 @@
                 <p>40213</p>
             </div>
             <div class="footer-column">
-            <h3>Hours</h3>
-            <p>Mon-Fri</p>
-            <p>9am-9pm</p>
+                <h3>Hours</h3>
+                <p>Mon-Fri</p>
+                <p>9am-9pm</p>
             </div>
         </div>
-            <div class="footer-note">
-            <p>page created by DavidDoolittle</p>
-            </div>
+        <div class="footer-note">
+            <p>page created by David Doolittle for FEWD22</p>
+        </div>
     </footer>
 </body>
+
 </html>
