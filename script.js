@@ -1,94 +1,94 @@
 var slist = {
-      // (A) INITIALIZE SHOPPING LIST
+      // Start Shopping List
       items : [],   // current shopping list
-      hform : null, // html add item <form>
-      hitem : null, // html add item <input> field
-      hadd : null,  // html add item submit button
-      hlist : null, // html <div> shopping list
+      hform : null, // add item form
+      hitem : null, // add item input field
+      hadd : null,  // add submit button
+      hlist : null, // <div> shopping list
       init : () => {
-        // (A1) GET HTML ELEMENTS
+        // HTML Elements
         slist.hform = document.getElementById("shop-form");
         slist.hitem = document.getElementById("shop-item");
         slist.hadd = document.getElementById("shop-add");
         slist.hlist = document.getElementById("shop-list");
     
-        // (A2) "ACTIVATE" HTML ADD ITEM FORM
+        // Activate Add items List
         slist.hitem.setAttribute("autocomplete", "off");
         slist.hform.onsubmit = slist.add;
         slist.hitem.disabled = false;
         slist.hadd.disabled = false;
     
-        // (A3) RESTORE PREVIOUS SHOPPING LIST
+        // Restore Previous List
         if (localStorage.items == undefined) { localStorage.items = "[]"; }
         slist.items = JSON.parse(localStorage.items);
     
-        // (A4) DRAW HTML SHOPPING LIST
+        // Draw Shopping List
         slist.draw();
       },
     
-      // (B) SAVE SHOPPING LIST INTO LOCAL STORAGE
+      // Save Shopping List Into Local Storage
       save : () => {
         if (localStorage.items == undefined) { localStorage.items = "[]"; }
         localStorage.items = JSON.stringify(slist.items);
       },
     
-      // (C) ADD NEW ITEM TO THE LIST
+      // Add New Item To List
       add : (evt) => {
-        // (C1) PREVENT FORM SUBMIT
+        // Prevent Form Submit
         evt.preventDefault();
     
-        // (C2) ADD NEW ITEM TO LIST
+        // Add New Item To List
         slist.items.push({
-          name : slist.hitem.value, // item name
-          done : false // true for "got it", false for "not yet"
+          name : slist.hitem.value, 
+          done : false 
         });
         slist.hitem.value = "";
         slist.save();
     
-        // (C3) REDRAW HTML SHOPPING LIST
+        // Redraw HTML Shopping List
         slist.draw();
       },
     
-      // (D) DELETE SELECTED ITEM
+      // Delete Item
       delete : (id) => { if (confirm("Remove this item?")) {
         slist.items.splice(id, 1);
         slist.save();
         slist.draw();
       }},
     
-      // (E) TOGGLE ITEM BETWEEN "GOT IT" OR "NOT YET"
+      // Toggle "GOT IT" OR "NOT YET"
       toggle : (id) => {
         slist.items[id].done = !slist.items[id].done;
         slist.save();
         slist.draw();
       },
     
-      // (F) DRAW THE HTML SHOPPING LIST
+      // The html Shpping List
       draw : () => {
-        // (F1) RESET HTML LIST
+        // Reset List
         slist.hlist.innerHTML = "";
     
-        // (F2) NO ITEMS
+        // No Items
         if (slist.items.length == 0) {
           slist.hlist.innerHTML = "<div class='item-row item-name'>No items found.</div>";
         }
     
-        // (F3) DRAW ITEMS
+        // Draw Items
         else {
           for (let i in slist.items) {
-            // ITEM ROW
+            // Item Row
             let row = document.createElement("div");
             row.className = "item-row";
             slist.hlist.appendChild(row);
     
-            // ITEM NAME
+            // Item Name
             let name = document.createElement("div");
             name.innerHTML = slist.items[i].name;
             name.className = "item-name";
             if (slist.items[i].done) { name.classList.add("item-got"); }
             row.appendChild(name);
     
-            // DELETE BUTTON
+            // Delete Button
             let del = document.createElement("input");
             del.className = "item-del";
             del.type = "button";
@@ -96,7 +96,7 @@ var slist = {
             del.onclick = () => { slist.delete(i); };
             row.appendChild(del);
     
-            // COMPLETED/NOT YET BUTTON
+            // Completed/Not Yet
             let ok = document.createElement("input");
             ok.className = "item-ok";
             ok.type = "button";
