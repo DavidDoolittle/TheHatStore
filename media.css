@@ -1,3 +1,4 @@
+/*Phones*/
 @media (max-width: 670px) {
 
     header nav h1 {
@@ -297,7 +298,7 @@
 
 }
 
-
+/*Desktop and larger tablets*/
 @media (min-width: 670px) and (max-width: 1200px) {
 
     header nav h1 {
