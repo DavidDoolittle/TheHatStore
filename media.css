@@ -1,0 +1,537 @@
+@media (max-width: 670px) {
+
+    header nav h1 {
+        font-size: x-small;
+        font-weight: 100;
+        display: flex;
+        width: 25%;
+    }
+
+    header nav .nav-titles p {
+        font-size: smaller;
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero {
+        display: contents;
+        width: 100%;
+        flex-shrink: 1;
+    }
+
+    .banner-content h2 {
+        display: flex;
+        justify-content: center;
+        font-size: 3.5em;
+        font-weight: bolder;
+        margin: auto;
+        width: auto;
+        padding: 10px 1% 30px 1%;
+    }
+
+    .banner-content p {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        font-size: 1.2em;
+        width: auto;
+        padding: 10px 1% 10px 1%;
+        background-color: rgb(15, 58, 26);
+    }
+
+    .container-main {
+        display: contents;
+        width: 100%;
+        flex-shrink: 1;
+    }
+
+    .main-content h3 {
+        display: flex;
+        justify-content: left;
+        font-size: 2.5em;
+        font-weight: bolder;
+        margin: auto;
+        width: auto;
+        padding: 10px 1% 30px 1%;
+    }
+
+    .main-content p {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        font-size: auto;
+        width: auto;
+        padding: 10px 1% 10px 1%;
+        background-color: rgb(34, 33, 33);
+    }
+
+    /* Images */
+    .main-img {
+        padding-top: 4em;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .main-img .img-detail img {
+        margin: 0 20px 20px 0;
+        width: 125px;
+        height: 125px;
+        border-radius: 50%;
+    }
+
+    .img-detail:hover {
+        filter: brightness(50%);
+        cursor: pointer;
+    }
+
+    .main-img h5 {
+        text-align: center;
+        font-size: .8em;
+    }
+
+    /* Body Content end*/
+    .bottom-p p {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        font-size: auto;
+        width: auto;
+        padding: 10px 1% 20px 1%;
+        background-color: rgb(34, 33, 33);
+    }
+
+    .bottom-p h3 {
+        display: flex;
+        justify-content: center;
+        font-size: 2.5em;
+        font-weight: bolder;
+        margin: auto;
+        width: auto;
+        padding: 10px 1% 30px 1%;
+    }
+
+    /*Footer*/
+    footer {
+        margin: 0;
+        padding: 15px;
+        padding-top: 2em;
+        background-color: black;
+        text-align: center;
+    }
+
+    footer .footer-columns {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    footer .footer-columns h3 {
+        font-size: large;
+    }
+
+    footer .footer-note {
+        text-align: right;
+        font-size: x-small;
+    }
+
+    /* Store */
+    .hats-info h2 {
+        display: flex;
+        justify-content: center;
+        font-size: 3.5em;
+        font-weight: bolder;
+        margin: auto;
+        width: auto;
+        padding: 10px 1% 30px 1%;
+    }
+
+    .hats-info p {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        font-size: 1.2em;
+        width: auto;
+        padding: 10px 1% 30px 1%;
+        background-color: rgb(15, 58, 26);
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 70%;
+        height: auto;
+        width: fit-content;
+    }
+
+    .hats-row {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 15px;
+        margin-left: 0px;
+        flex-wrap: wrap;
+        align-items: center;
+        background-color: rgb(107, 95, 95);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
+        padding-right: .1rem;
+    }
+
+    .hats-row h5 {
+        margin: 0;
+        font-size: larger;
+        padding-left: 3em;
+    }
+
+    .hats-row p {
+        margin: 0;
+        font-size: medium;
+        padding-left: 3.6em;
+    }
+
+    .hats-row>div {
+        flex-grow: 2;
+        padding-left: .5rem;
+    }
+
+    .hats-row>small {
+        margin: 7px;
+        flex-shrink: 3;
+        font-size: larger;
+    }
+
+    .hats-row>button {
+        flex-shrink: 1;
+        margin: 3em;
+    }
+
+    .hats-row>button {
+        padding: 5px 10px;
+        font-size: 1.3em;
+        font-family: 'Poppins';
+        background-color: inherit;
+        border: 3px solid rgb(28, 201, 28);
+        border-radius: 5px;
+        color: whitesmoke;
+        cursor: pointer;
+    }
+
+    .hats-row button:hover {
+        background-color: rgb(29, 165, 52);
+        color: black;
+    }
+
+    .hats-row button {
+        background-color: inherit;
+        color: whitesmoke;
+        border: 3px solid rgb(28, 201, 28);
+    }
+
+    .hats-row img {
+        width: 125px;
+        height: 125px;
+        border-radius: 50%;
+        padding: 20px;
+    }
+
+    /*Shopping List*/
+    #shop-wrap,
+    #shop-wrap>* {
+        box-sizing: border-box;
+    }
+
+    #shop-wrap input {
+        padding: 10px;
+        border: 0;
+        color: black;
+    }
+
+    #shop-wrap input[type=button],
+    #shop-wrap input[type=submit] {
+        cursor: pointer;
+        color: whitesmoke;
+        background: green;
+    }
+
+    #shop-form,
+    .item-row {
+        display: flex;
+        align-items: center;
+    }
+
+    #shop-item,
+    .item-name {
+        flex-grow: 1;
+    }
+
+    #shop-wrap {
+        max-width: 500px;
+        padding: 15px;
+        background: inherit;
+    }
+
+    .item-row {
+        margin-top: 10px;
+    }
+
+    .item-name {
+        padding: 5px;
+        background: white;
+        color: black;
+    }
+
+    .item-name.item-got {
+        background: white;
+    }
+
+    .item-name.item-got:before {
+        content: "\02713";
+        margin-right: 5px;
+        font-weight: bold;
+        color: #00d036;
+    }
+
+    .item-del {
+        background: red !important;
+    }
+
+
+}
+
+
+@media (min-width: 670px) and (max-width: 1200px) {
+
+    header nav h1 {
+        font-size: larger;
+        font-weight: 600;
+        display: flex;
+        width: 25%;
+    }
+
+    header nav .nav-titles p {
+        font-size: larger;
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero {
+        display: contents;
+        width: 100%;
+        flex-shrink: 1;
+    }
+
+    .banner-content h2 {
+        display: flex;
+        justify-content: center;
+        font-size: 3.5em;
+        font-weight: bolder;
+        margin: auto;
+        width: auto;
+        padding: 10px 1% 30px 1%;
+    }
+
+    .banner-content p {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        font-size: 1.2em;
+        width: auto;
+        padding: 10px 1% 10px 1%;
+        background-color: rgb(15, 58, 26);
+    }
+
+    .container-main {
+        display: contents;
+        width: 100%;
+        flex-shrink: 1;
+    }
+
+    .main-content h3 {
+        display: flex;
+        justify-content: left;
+        font-size: 2.5em;
+        font-weight: bolder;
+        margin: auto;
+        width: auto;
+        padding: 10px 1% 30px 1%;
+    }
+
+    .main-content p {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        font-size: auto;
+        width: auto;
+        padding: 10px 1% 10px 1%;
+        background-color: rgb(34, 33, 33);
+    }
+
+    /* Images */
+    .main-img {
+        padding-top: 4em;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .main-img .img-detail img {
+        margin: 0 20px 20px 0;
+        width: 125px;
+        height: 125px;
+        border-radius: 50%;
+    }
+
+    .img-detail:hover {
+        filter: brightness(50%);
+        cursor: pointer;
+    }
+
+    .main-img h5 {
+        text-align: center;
+        font-size: .8em;
+    }
+
+    /* Body Content end*/
+    .bottom-p p {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        font-size: auto;
+        width: auto;
+        padding: 10px 1% 20px 1%;
+        background-color: rgb(34, 33, 33);
+    }
+
+    .bottom-p h3 {
+        display: flex;
+        justify-content: center;
+        font-size: 2.5em;
+        font-weight: bolder;
+        margin: auto;
+        width: auto;
+        padding: 10px 1% 30px 1%;
+    }
+
+    /*Footer*/
+    footer {
+        margin: 0;
+        padding: 15px;
+        padding-top: 2em;
+        background-color: black;
+        text-align: center;
+    }
+
+    footer .footer-columns {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    footer .footer-columns h3 {
+        font-size: large;
+    }
+
+    footer .footer-note {
+        text-align: right;
+        font-size: x-small;
+    }
+
+    /* Store */
+    .hats-info h2 {
+        display: flex;
+        justify-content: center;
+        font-size: 3.5em;
+        font-weight: bolder;
+        margin: auto;
+        width: auto;
+        padding: 10px 1% 30px 1%;
+    }
+
+    .hats-info p {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        font-size: 1.2em;
+        width: auto;
+        padding: 10px 1% 30px 1%;
+        background-color: rgb(15, 58, 26);
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 70%;
+        height: auto;
+        width: fit-content;
+    }
+
+    .hats-row {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 15px;
+        margin-left: 0px;
+        flex-wrap: wrap;
+        align-items: center;
+        background-color: rgb(107, 95, 95);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
+        padding-right: .1rem;
+    }
+
+    .hats-row h5 {
+        margin: 0;
+        font-size: larger;
+        padding-left: 3em;
+    }
+
+    .hats-row p {
+        margin: 0;
+        font-size: medium;
+        padding-left: 3.6em;
+    }
+
+    .hats-row>div {
+        flex-grow: 2;
+        padding-left: .5rem;
+    }
+
+    .hats-row>small {
+        margin: 7px;
+        flex-shrink: 3;
+        font-size: larger;
+    }
+
+    .hats-row>button {
+        flex-shrink: 1;
+        margin: 3em;
+    }
+
+    .hats-row>button {
+        padding: 5px 10px;
+        font-size: 1.3em;
+        font-family: 'Poppins';
+        background-color: inherit;
+        border: 3px solid rgb(28, 201, 28);
+        border-radius: 5px;
+        color: whitesmoke;
+        cursor: pointer;
+    }
+
+    .hats-row button:hover {
+        background-color: rgb(29, 165, 52);
+        color: black;
+    }
+
+    .hats-row button {
+        background-color: inherit;
+        color: whitesmoke;
+        border: 3px solid rgb(28, 201, 28);
+    }
+
+    .hats-row img {
+        width: 125px;
+        height: 125px;
+        border-radius: 50%;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 669px) {
